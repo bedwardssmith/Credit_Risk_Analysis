@@ -58,7 +58,7 @@
 <ul>
 <li>Confusion Matrix - The confusion matrix TELLS US </li>
 </ul>
-<img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Combination_Confusion_Matrix.png
+<img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Combination_Confusion_Matrix.png">
 <li>Imbalanced Classification Report - The imbalanced classification report TELLS US </li>
 </ul>
 <img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Combination_Classification_Report.png">
