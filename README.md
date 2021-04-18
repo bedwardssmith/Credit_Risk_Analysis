@@ -18,7 +18,7 @@
   <li>Imbalanced Classification Report - The imbalanced classification report TELLS US </li>
 </ul>
 <img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Random_Oversampling_Classification_Report.png">
-<br>
+
 <h4>Smote</h4>
 <p>SMOTE Oversampling was the second technique used.  SMOTE, which refers to synthetic minority oversampling technique, once again increases the size of the minority class.  However, new instancesa re interpolated rather than randomly selected as in the previous technique.  In SMOTE for an instance from the minority class a number of its closest neighbors is chosen.  Based on these values new values are created.</p>
 <ul>
@@ -33,7 +33,7 @@
 <li>Imbalanced Classification Report - The imbalanced classification report TELLS US </li>
 </ul>
 <img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/SMOTE_Oversampling_Confusion_Matrix.png">
-<br>
+
 <h4>Cluser Centroid Undersampling</h4>
 <p>The next technique used was cluster centroid undersampling.  In this method the algorithm identifies clusters of the majority class.  Synthetic data points are then generated that are representative of the clusers.  Unlike oversampling the majority class is undersampled down to the size of the minority class</p>
 <ul>
@@ -48,4 +48,4 @@
 <li>Imbalanced Classification Report - The imbalanced classification report TELLS US </li>
 </ul>
 <img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Under_Sampling_Classification_Report.png">
-<br> 
+
