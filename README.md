@@ -34,7 +34,7 @@
 </ul>
 <img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/SMOTE_Oversampling_Confusion_Matrix.png">
 <br>
-<hr>Cluser Centroid Undersampling</h4>
+<h4>Cluser Centroid Undersampling</h4>
 <p>The next technique used was cluster centroid undersampling.  In this method the algorithm identifies clusters of the majority class.  Synthetic data points are then generated that are representative of the clusers.  Unlike oversampling the majority class is undersampled down to the size of the minority class</p>
 <ul>
 <li>Balanced Accuracy Score - The balanced accruacy score is .6453 WHICH MEANS</li>
