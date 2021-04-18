@@ -4,6 +4,7 @@
 <h2>Results</h2>
 <p>Various models were used for which the performance of each was evaluated.</p>
 <h3>Resampling Techniques</h3>
+<h4>Naive Random Oversampling</h4>
 <p>Naive Random Oversampling was the first technique used.  Oversampling is used where one class has too few instances in the training set, therefore, we choose more instances from that class for training.  In random oversampling, instances of the minority class are randomly selected and added to the training set.  This is done until the majority and minority classes are balanced.<p>
 <ul>
 <li>Balanced Accuracy Score - The balanced accruacy score is .6631 WHICH MEANS</li>
@@ -18,6 +19,7 @@
 </ul>
 <img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Random_Oversampling_Classification_Report.png">
 <br>
+<h4>Smote</h4>
 <p>SMOTE Oversampling was the second technique used.  SMOTE, which refers to synthetic minority oversampling technique, once again increases the size of the minority class.  However, new instancesa re interpolated rather than randomly selected as in the previous technique.  In SMOTE for an instance from the minority class a number of its closest neighbors is chosen.  Based on these values new values are created.</p>
 <ul>
 <li>Balanced Accuracy Score - The balanced accruacy score is .6453 WHICH MEANS</li>
@@ -32,7 +34,8 @@
 </ul>
 <img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/SMOTE_Oversampling_Confusion_Matrix.png">
 <br>
-<p>The next technique used was cluster centroid underst=ampling.  In this method the algorithm identifies clusters of the majority class.  Synthetic data points are then generated that are representative of the clusers.  Unlike oversampling the majority class is undersampled down to the size of the minority class</p>
+<hr>Cluser Centroid Undersampling</h4>
+<p>The next technique used was cluster centroid undersampling.  In this method the algorithm identifies clusters of the majority class.  Synthetic data points are then generated that are representative of the clusers.  Unlike oversampling the majority class is undersampled down to the size of the minority class</p>
 <ul>
 <li>Balanced Accuracy Score - The balanced accruacy score is .6453 WHICH MEANS</li>
 </ul>
