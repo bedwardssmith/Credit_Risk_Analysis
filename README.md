@@ -91,4 +91,4 @@ XXXX
 <img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Ensemble_AdaBoost_Confusion_Matrix.png">
 <li>Imbalanced Classification Report - The imbalanced classification report TELLS US </li>
 </ul>
-<img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Ensemble_AdaBoost_Classification_Report.png>                                                                                                                           
+<img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Ensemble_AdaBoost_Classification_Report.png">                                                                                                                           
