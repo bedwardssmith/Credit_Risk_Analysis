@@ -2,14 +2,20 @@
 <h2>Overview</h2>
 <p>FastLending, a peer to peer lender, is looking to implement machine learning to credit card risk.  This analysis includes various models using the credit card credit dataset from LendingClub another peer-to-peer lending services company.</p>
 <h2>Results</h2>
-<p>Various models were used for which the performance of each was evaluated.</p>
+<p>Various models were used for which the performance of each is evaluated below.  In order to understand the results I have provided an explanation of each of the metrics reviewed.</p>
+<h4>Balance Accuracy Score</h4>
+<p>The balanced accuracy score is the average of specificity and sensitivity.  A score of 1.0 is the highest with 0 being the lowest.</p>
+<h4>Confusion Matrix</h4>
+<p>The confusion matrix shows the number of correct and incorrect predictions made by a classifier.  In other words it tells us the number of true positives and false positives.</p>  
+<h4>Classification Schedule</h4>
+<p>The classification schedule includes the F1 score amongst other information.  F1 is the harmonic average of precision and recall and is calculated as 2(Precision x Sensitivity)/(Precision + Sensitivity).  Sensitivity is the number of true positivies divided by the sum of true positives plus false negatives, wherease, precision is calculated by dividing true positivies by the sum of true positivies and false positives.  There is a tradeoff between precision and sensitivity with some situations where sensitivity is more important.</p>
 <h3>Resampling Techniques</h3>
 <h4>Naive Random Oversampling</h4>
-<p>Naive Random Oversampling was the first technique used.  Oversampling is used where one class has too few instances in the training set, therefore, we choose more instances from that class for training.  In random oversampling, instances of the minority class are randomly selected and added to the training set.  This is done until the majority and minority classes are balanced.<p>
+<p>Oversampling is used where one class has too few instances in the training set, therefore, we choose more instances from that class for training.  In random oversampling, instances of the minority class are randomly selected and added to the training set.  This is done until the majority and minority classes are balanced.<p>
 <ul>
-<li>Balanced Accuracy Score - The balanced accruacy score is .6631 WHICH MEANS</li>
-<li>Confusion Matrix - The confusion matrix TELLS US </li>
-<li>Imbalanced Classification Report - The imbalanced classification report TELLS US </li>
+<li>Balanced Accuracy Score - The balanced accruacy score is .6601 WHICH MEANS</li>
+<li>Confusion Matrix - The confusion matrix provides an F1 score of .6 </li>
+<li>Imbalanced Classification Report - The imbalanced classification report provides an F1 score of .73. </li>
 </ul>
 <img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Oversampling_summary.png">
 
@@ -43,7 +49,7 @@
 <h3>Ensemble Learners Techniques</h3>
 
 <h4>Balanced Random Forest Classifier</h4>
-<p>Balanced Random Forest Classifier was the first technique used.  NEED TO ADD IN FURTHER DETAIL</p>
+<p>A balanced random forest algorithim samples the data and builds several small, simpler decision trees in comparison to the more complex trees created by the decision tree method.  The trees are simpler as they are built from a random set of features.  Each if these simple trees are weak learners as NNNNNNN</p>
 <ul>
 <li>Balanced Accuracy Score - The balanced accruacy score is .6453 WHICH MEANS</li>
 <li>Confusion Matrix - The confusion matrix TELLS US </li>
