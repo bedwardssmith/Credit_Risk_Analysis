@@ -38,7 +38,7 @@
 <li>Imbalanced Classification Report - The imbalanced classification report TELLS US </li>
 </ul>
 <img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Combination_Summary.png">
-XXXX
+
 <h3>Ensemble Learners Techniques</h3>
 
 <h4>Balanced Random Forest Classifier</h4>
