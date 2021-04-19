@@ -10,6 +10,7 @@
 <li>Balanced Accuracy Score - The balanced accruacy score is .6631 WHICH MEANS</li>
 <li>Confusion Matrix - The confusion matrix TELLS US </li>
 <li>Imbalanced Classification Report - The imbalanced classification report TELLS US </li>
+</ul>
 <img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Oversampling_summary.png">
 
 <h4>Smote</h4>
