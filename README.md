@@ -2,7 +2,7 @@
 <h2>Overview</h2>
 <p>FastLending, a peer-to-peer lender, is looking to implement machine learning to assess credit risk.  In order to determine an appropriate model credit card data from the LendingClub, another peer-to-peer lending services company, was used to evaluate the performance of various machine learning models.  Following the detailed analysis is a recommendation on whether these models should be used to predict credit risk.</p>
 <h2>Results</h2>
-<h3>Understanding of Information Presented</h3>
+<h3>Metrics Used in Analysis</h3>
 <h4>Balanced Accuracy Score</h4>
 <p>The balance accuracy score is the average of specificity and sensitivity with a score of 1.0 being the highest and 0 being the lowest.  Note the specificity refers to the negatives which were predicted as negative; true negatives, whereas, sensitivity refers to the actual positives which were predicted as positives; true positives.</p>
 <h4>Confusion Matrix</h4>
