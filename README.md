@@ -12,7 +12,7 @@
 <h3>Resampling Techniques</h3>
 <p>There are a number of resampling techniques available all of which attempt to address class imbalance.  Class imbalance refers to a dataset in which the classes are not equally presented.  As an example, the dataset may contain a greater number of instances with low credit risk than high credit risk.</p>
 <h4>Naïve Random Oversampling</h4>
-<p>In naïve random oversampling instances of the minority class are randomly selected and added to the training set until both classes, majority, and minority, are balanced.  The results using this model are reflected below.</p>
+<p>In naïve random oversampling instances of the minority class are randomly selected and added to the training set until both classes, majority, and minority, are balanced.  The results using this model are provided below.</p>
 <ul>
 <li>Balanced Accuracy Score = 66.03%.</li>
 <li>High Risk Precision = 0.1</li>
@@ -23,7 +23,7 @@
 </ul>
 <img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Oversampling_summary.png">
 <h4>SMOTE</h4>
-<p>SMOTE refers to synthetic minority oversampling and is another oversamping technique to address imbalanced datasets.  Similar to random oversampling the size of the minority class if increased to reach balance.  However, unlike random sampling, new instances of the minority set are interpolated.  What this means is that for an instance from the minority class a number of its closest neighbors is chosen.  Based on these neighboring values, new values are created.  Given that these synthetic values are based on neighbors of an instance from the minority class the model is vulnerable to outliers as the synthetic values will reflect this.</p>
+<p>SMOTE refers to synthetic minority oversampling and is another oversamping technique to address imbalanced datasets.  Similar to random oversampling the size of the minority class if increased to reach balance.  However, unlike random sampling, new instances of the minority set are interpolated.  What this means is that for an instance from the minority class a number of its closest neighbors is chosen.  Based on these neighboring values, new values are created.  Given that these synthetic values are based on neighbors of an instance from the minority class the model is vulnerable to outliers as the synthetic values will reflect this.  The results using this model are provided below:</p>
 <ul>
 <li>Balance Accuracy Score = 65.37%</li>
 <li>High Risk Precision = .01</li>
@@ -45,7 +45,7 @@
 </ul>
 <img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Undersmapling_Summary.png">
 <h4>SMOTEEN</h4>
-<p>SMOTEEN is a combination of oversampling using SMOTE and undersampling using Edited Nearest Neighbors (ENN).  First the minority class is oversampled with SMOTE.  The resulting data is then cleaned with the edited nearest neighbor where if two nearest neighbors of a data point belong to two different classes that data point is dropped.</p>
+<p>SMOTEEN is a combination of oversampling using SMOTE and undersampling using Edited Nearest Neighbors (ENN).  First the minority class is oversampled with SMOTE.  The resulting data is then cleaned with the edited nearest neighbor where if two nearest neighbors of a data point belong to two different classes that data point is dropped.  The results using this model are provided below:</p>
 <ul>
 <li>Balanced Accuracy Score = 68.08%</li>
 <li>High Risk Precision = .01</li>
@@ -59,7 +59,7 @@
 <h3>Ensemble Learners Techniques</h3>
 <p>Ensemble learner techniques combine multiple models to help improve the accuracy and robustness, as well as decrease variance of the model, all of which increase the overall performance of a model.  Where an ensemble learner technique is used the final prediction is based on the accumulated predictions from each algorithm.<p>
 <h4>Balance Random Forest Classifier</h4>
-<p>A random forest algorithm samples the data and builds several smaller, simpler decision trees. These simpler decision trees are built from a random subset of features and due to this fact are considered weak learners as these decision trees are based on only a small portion of the data.  However, these small decision trees can be combined to create a strong learner as all of the weak learners are trained on different pieces of the data.  An additional benefit of the balanced random forest classifier is the ability to rank the importance of features which allows us to see which features have the most impact on a decision.  This ranking can then be used to drop features which will improve the performance of the model.</p>
+<p>A random forest algorithm samples the data and builds several smaller, simpler decision trees. These simpler decision trees are built from a random subset of features and due to this fact are considered weak learners as these decision trees are based on only a small portion of the data.  However, these small decision trees can be combined to create a strong learner as all of the weak learners are trained on different pieces of the data.  An additional benefit of the balanced random forest classifier is the ability to rank the importance of features which allows us to see which features have the most impact on a decision.  This ranking can then be used to drop features which will improve the performance of the model.  The results using this model are provided below:</p>
 <ul>
 <li>Balanced Accuracy Score = 78.85%</li>
 <li>High Risk Precision = .03</li>
@@ -71,7 +71,7 @@
 <img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Random_Forest_Summary.png">
 
 <h4>Easy Ensemble AdaBoost Classifier</h4>
-<p>When an AdaBoost Classifier is used a model is trained and then evaluated.  Once the errors of the first model are evaluated another model is trained, however, extra weight is given to the errors from the previous model.  This weighting is used to minimize similar errors in subsequent models.  This process continues until the error rate is minimized.</p>
+<p>When an AdaBoost Classifier is used a model is trained and then evaluated.  Once the errors of the first model are evaluated another model is trained, however, extra weight is given to the errors from the previous model.  This weighting is used to minimize similar errors in subsequent models.  This process continues until the error rate is minimized.  The results using this model are provided below:</p>
 <ul>
 <li>Balanced Accuracy Score = 93.17%</li>
 <li>High Risk Precision = .09</li>
