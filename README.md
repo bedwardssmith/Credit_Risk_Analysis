@@ -36,7 +36,7 @@
 <h4>Cluster Centroid Undersampling</h4>
 <p>Cluster centroid undersampling, unlike the previous two techniques, uses undersampling rather than oversampling to address class imbalance.  In this case the majority class is decreased rather than the minority class being increased to obtain balance.</p>
 <ul>
-<li>Balanced Accuracy Score = 54.38%</li>
+<li>Balanced Accuracy Score = 54.39%</li>
 <li>High Risk Precision = .01</li>
 <li>Low Risk Precision = 1</li>
 <li>High Risk Recall = .69</li>
