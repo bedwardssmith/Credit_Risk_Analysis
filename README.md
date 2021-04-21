@@ -23,7 +23,7 @@
 </ul>
 <img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Oversampling_summary.png">
 <h4>SMOTE</h4>
-<p>SMOTE refers to synthetic minority oversampling and is another oversamping technique to address imbalanced datasets.  Similar to random oversampling the size of the minority class if increased to reach balance.  However, unlike random sampling, new instances of the minority set are interpolated.  What this means is that for an instance from the minority class a number of its closest neighbors is chosen.  Based on these neighboring values, new values are created.  Given that these synthetic values are based on neighbors of an instance from the minority class the model is vulnerable to outliers as the synthetic values will reflect this.  The results using this model are provided below:</p>
+<p>SMOTE refers to synthetic minority oversampling and is another oversamping technique to address imbalanced datasets.  Similar to random oversampling the size of the minority class is increased to reach balance.  However, unlike random sampling, new instances of the minority set are interpolated.  What this means is that for an instance from the minority class a number of its closest neighbors is chosen.  Based on these neighboring values, new values are created.  Given that these synthetic values are based on neighbors of an instance from the minority class the model is vulnerable to outliers as the synthetic values will reflect this.  The results using this model are provided below:</p>
 <ul>
 <li>Balance Accuracy Score = 65.37%</li>
 <li>High Risk Precision = .01</li>
