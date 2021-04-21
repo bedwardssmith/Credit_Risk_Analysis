@@ -21,7 +21,7 @@
 <li>Low Risk Recall = .58</li>
 <li>Average F1 = .73</li>
 </ul>
-<img scr="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Oversampling_summary.png">
+<img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Oversampling_summary.png">
 <h4>SMOTE</h4>
 <p>SMOTE refers to synthetic minority oversampling and is another oversamping technique to address imbalanced datasets.  Similar to random oversampling the size of the minority class if increased to reach balance.  However, unlike random sampling, new instances of the minority set are interpolated.  What this means is that for an instance from the minority class a number of its closest neighbors is chosen.  Based on these neighboring values, new values are created.  Given that these synthetic values are based on neighbors of an instance from the minority class the model is vulnerable to outliers as the synthetic values will reflect this.</p>
 <ul>
@@ -32,7 +32,7 @@
 <li>Low Risk Recall = .68</li>
 <li>Average F1 = .81</li>
 </ul>
-<img scr=”https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/SMOTE_Summary.png">
+<img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/SMOTE_Summary.png">
 <h4>Cluster Centroid Undersampling</h4>
 <p>Cluster centroid undersampling, unlike the previous two techniques, uses undersampling rather than oversampling to address class imbalance.  In this case the majority class is decreased rather than the minority class increase to obtain balance.</p>
 <ul>
@@ -43,7 +43,7 @@
 <li>Low Risk Recall = .39</li>
 <li>Average F1 = .56</li>
 </ul>
-<img scr="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Undersmapling_Summary.png">
+<img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Undersmapling_Summary.png">
 <h4>SMOTEEN</h4>
 <p>SMOTEEN is a combination of oversampling using SMOTE and undersampling using Edited Nearest Neighbors (ENN).  First the minority class is oversampled with SMOTE.  The resulting data is then cleaned with the edited nearest neighbor where if two nearest neighbors of a data point belong to two different classes that data point is dropped.</p>
 <ul>
@@ -54,7 +54,7 @@
 <li>Low Risk Recall = .59</li>
 <li>Average F1 = .55</li>
 </ul>
-<img scr="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Combination_Summary.png">
+<img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Combination_Summary.png">
 
 <h3>Ensemble Learners Techniques</h3>
 <p>Ensemble learner techniques combine multiple models to help improve the accuracy and robustness, as well as decrease variance of the model, all of which increase the overall performance of a model.  Where an ensemble learner technique is used the final prediction is based on the accumulated predictions from each algorithm.<p>
@@ -68,7 +68,7 @@
 <li>Low Risk Recall = .87</li>
 <li>Average F1 = .93</li>
 </ul>
-<img scr="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Random_Forest_Summary.png">
+<img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Random_Forest_Summary.png">
 
 <h4>Easy Ensemble AdaBoost Classifier</h4>
 <p>When an AdaBoost Classifier is used a model is trained and then evaluated.  Once the errors of the first model are evaluated another model is trained, however, extra weight is given to the errors from the previous model.  This weighting is used to minimize similar errors in subsequent models.  This process continues until the error rate is minimized.</p>
@@ -80,7 +80,7 @@
 <li>Low Risk Recall = .94</li>
 <li>Average F1 = .97</li>
 </ul>
-<img scr="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/AdaBoost_Summary.png">
+<img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/AdaBoost_Summary.png">
 <h2>Summary</h2>
 <p>In reviewing the results the ensemble learner techniques outperformed the random sampling techniques with the Easy Ensemble AdaBoost Classifier achieving a balanced accuracy score of 93.17% whereas the highest score using a random sampling technique was 69.08% using the SMOOTEEN model.    The poorest performing model was Cluster Centroid Undersampling with a balanced accuracy score of 54.39%.</p>
 <p>Although the Easy Ensemble AdaBoost Classifier model obtained the highest scores we must look at the scores themselves to determine if in fact this model should be recommended for use.  As noted previously precision tells us how reliable a positive classification is.  In this case it is .09 reliable for high-risk instances and 1.0 reliable for low-risk instances.  On the other hand, recall tells us the ability of the classifier to find all the positive samples which in this case is .92 for high-risk instances and .94 for low-risk instances; a difference of .02.  Lastly, we look at the F1 value which is .16 for high risk and .97 for low-risk instances.   Based on these scores I would recommend the model for prediction of credit risk; although there are a significant number of low risk instances which were predicted by the model as high risk the number of instances that were predicted as low risk which were in fact high risk were minimal.<p>
