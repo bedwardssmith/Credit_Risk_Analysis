@@ -1,6 +1,6 @@
 <h1>FastLending</h1>
 <h2>Overview</h2>
-<p>FastLending, a peer-to-peer lender, is looking to implement machine learning to assess credit risk.  In order to determine an appropriate model credit card data from the LendingClub, another peer-to-peer lending services company, was used to evaluate the performance of various machine learning models.  Following the detailed analysis is a recommendation on whether these models should be used to predict credit risk.</p>
+<p>FastLending, a peer-to-peer lender, is looking to implement machine learning to assess credit risk.  Credit card data from the LendingClub, another peer-to-peer lending services company, was used to evaluate the performance of various machine learning models. Following the analysis is my recommendation for the module to be used in predicting credit risk by FastLending.</p>
 <h2>Results</h2>
 <h3>Metrics Used in Analysis</h3>
 <h4>Balanced Accuracy Score</h4>
