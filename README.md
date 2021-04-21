@@ -34,7 +34,7 @@
 </ul>
 <img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/SMOTE_Summary.png">
 <h4>Cluster Centroid Undersampling</h4>
-<p>Cluster centroid undersampling, unlike the previous two techniques, uses undersampling rather than oversampling to address class imbalance.  In this case the majority class is decreased rather than the minority class increase to obtain balance.</p>
+<p>Cluster centroid undersampling, unlike the previous two techniques, uses undersampling rather than oversampling to address class imbalance.  In this case the majority class is decreased rather than the minority class being increased to obtain balance.</p>
 <ul>
 <li>Balanced Accuracy Score = 54.38%</li>
 <li>High Risk Precision = .01</li>
