@@ -52,7 +52,7 @@
 <li>Low Risk Precision = 1</li>
 <li>High Risk Recall = .77</li>
 <li>Low Risk Recall = .59</li>
-<li>Average F1 = .55</li>
+<li>Average F1 = .74</li>
 </ul>
 <img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Combination_Summary.png">
 
