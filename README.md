@@ -69,6 +69,7 @@
 <li>Average F1 = .93</li>
 </ul>
 <img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Random_Forest_Summary.png">
+<img src="https://github.com/bedwardssmith/Credit_Risk_Analysis/blob/main/Images/Ensemble_Sorted_Features_Report.png">
 
 <h4>Easy Ensemble AdaBoost Classifier</h4>
 <p>When an AdaBoost Classifier is used a model is trained and then evaluated.  Once the errors of the first model are evaluated another model is trained, however, extra weight is given to the errors from the previous model.  This weighting is used to minimize similar errors in subsequent models.  This process continues until the error rate is minimized.  The results using this model are provided below:</p>
